@@ -1,0 +1,315 @@
+
+===== cell 1: (empty)
+----- cell 1 ok (0.0s)
+
+===== cell 2: 
+----- cell 2 ok (1.8s)
+
+===== cell 3: from pathlib import Path
+----- cell 3 ok (39.3s)
+
+===== cell 4: MODEL_ID = "google/embeddinggemma-2"
+裝置： cpu ／模型精度： torch.float32
+                      套件      版本
+0                  torch  2.14.1
+1                  numpy   2.5.4
+2  sentence-transformers   6.1.0
+3           transformers  5.20.1
+4              faiss-cpu  1.15.1
+5        huggingface-hub  1.33.0
+----- cell 4 ok (0.0s)
+
+===== cell 5: def to_direct_download_url(url):
+----- cell 5 ok (0.0s)
+
+===== cell 6: archive_bytes, archive_name = None, None
+資料： songs-raw.zip ／TXT 數量： 36
+C01_practice_love、C02_rose_boy、C03_prodigal_son、C04_if_i_could、C05_someday_or_one_day、C06_wont_cry、C07_k_song_king、C08_li_bai、C09_a_kind_of_sorrow、C10_love_you、C11_light_years_away、C12_suddenly_miss_you、J01_renegades、J02_one_last_kiss、J03_suzume、J04_idol、J05_lemon、J06_pretender、J07_usseewa、J08_marigold、J09_gurenge、J10_suiheisen、J11_bbbb、J12_shinunoga_ewa、W01_senorita、W02_my_universe、W03_drunk_text、W04_birds_of_a_feather、W05_blinding_lights、W06_drivers_license、W07_love_story_tv、W08_someone_you_loved、W09_die_with_a_smile、W10_perfect、W11_memories、W12_flowers
+----- cell 6 ok (0.1s)
+
+===== cell 7: SAMPLE_INDEX = 0
+檔名： C01_practice_love.txt
+============================================================
+標題：修煉愛情
+歌手：林俊傑（JJ Lin）
+地區：華語
+發行年份：2013
+語言：華語
+曲風：抒情流行（鋼琴情歌）
+場合標籤：失戀、遺憾、思念、KTV 抒情歌
+氛圍關鍵字：遺憾、成長、放下、回不去
+來源網址：https://www.marieclaire.com.tw/entertainment/news/80070 ; https://www.wikipedia.org/wiki/Kevin_Yi ; https://rubenerd.com/music-monday-jj-lin-practice-love
+資料整理日期：2026-10-23
+資料性質：課堂作業自行整理摘要（非官方資料，不含歌詞）
+
+【創作背景】
+〈修煉愛情〉收錄在新加坡歌手林俊傑2013年3月發行的第十張專輯《因你而在》（Stories Untold），作詞人易家揚是林俊傑的長期合作夥伴。歌曲的英文名是 Practice Love，把愛情比喻成一場修煉：經歷過失去與遺憾，才慢慢學會怎麼愛、怎麼放下。根據媒體報導，這首歌背後藏著林俊傑一段「超越生死、回不去的遺憾」——報導提到他中學時期認識的一位女性友人在1997年的空難中離世，事後才得知她的遺物中有一張他的照片，這份遺憾成為創作的契機之一。
+
+【氛圍與情緒】
+以鋼琴為主的抒情曲，前段安靜克制，副歌情緒漸強，唱出「明白了、但已經回不去」的成熟悲傷。比起撕心裂肺，更像是多年後回頭看一段感情時的感慨。
+
+【適合場合與用途】
+適合失戀後慢慢療傷、懷念回不去的人或時光的時候；也是 KTV 抒情歌的熱門選擇，副歌很考驗氣息與情感。很適合放進「深夜放不下」歌單。
+
+【歌手趣聞】
+林俊傑憑《因你而在》在2014年拿下人生第一座金曲獎最佳國語男歌手。易家揚與林俊傑合作過許多經典，例如〈黑夜問白天〉等。這首歌在新加坡、馬來西亞與台灣都很流行。
+
+【延伸冷知識】
+林俊傑2003年出道，〈修煉愛情〉發行時剛好出道滿十年。他以穩定的現場唱功聞名，常被歌迷稱為「行走的 CD」。
+
+----- cell 7 ok (0.0s)
+
+===== cell 8: def normalize_text(raw_text):
+{
+  "song_id": "C01",
+  "title": "修煉愛情",
+  "artist": "林俊傑（JJ Lin）",
+  "region": "華語",
+  "year": 2013,
+  "year_note": "2013",
+  "language": "華語",
+  "genre": "抒情流行（鋼琴情歌）",
+  "tags": [
+    "失戀",
+    "遺憾",
+    "思念",
+    "KTV 抒情歌"
+  ],
+  "moods": [
+    "遺憾",
+    "成長",
+    "放下",
+    "回不去"
+  ],
+  "source_urls": [
+    "https://www.marieclaire.com.tw/entertainment/news/80070",
+    "https://www.wikipedia.org/wiki/Kevin_Yi",
+    "https://rubenerd.com/music-monday-jj-lin-practice-love"
+  ],
+  "date": "2026-10-23",
+  "document_type": "課堂作業自行整理摘要（非官方資料，不含歌詞）",
+  "filename": "C01_practice_love.txt"
+}
+----- cell 8 ok (0.0s)
+
+===== cell 9: SECTION_PATTERN = re.compile(
+〈修煉愛情〉林俊傑（JJ Lin）｜基本資料
+歌手：林俊傑（JJ Lin）
+地區：華語
+發行年份：2013
+語言：華語
+曲風：抒情流行（鋼琴情歌）
+場合標籤：失戀、遺憾、思念、KTV 抒情歌
+氛圍關鍵字：遺憾、成長、放下、回不去 
+------------------------------------------------------------
+〈修煉愛情〉林俊傑（JJ Lin）｜創作背景
+〈修煉愛情〉收錄在新加坡歌手林俊傑2013年3月發行的第十張專輯《因你而在》（Stories Untold），作詞人易家揚是林俊傑的長期合作夥伴。歌曲的英文名是 Practice Love，把愛情比喻成一場修煉：經歷過失去與遺憾，才慢慢學會怎麼愛、怎麼放下。根據媒體報導，這首歌背後藏著林俊傑一段「超越生死、回不去的遺憾」——報導提到他中學時期認識的一位女性友人在1997年的空難中離世，事後才得知她的遺物中有一張他的照片，這份遺憾成為創作的契機之一。 
+------------------------------------------------------------
+〈修煉愛情〉林俊傑（JJ Lin）｜氛圍與情緒
+以鋼琴為主的抒情曲，前段安靜克制，副歌情緒漸強，唱出「明白了、但已經回不去」的成熟悲傷。比起撕心裂肺，更像是多年後回頭看一段感情時的感慨。 
+------------------------------------------------------------
+----- cell 9 ok (0.0s)
+
+===== cell 10: songs, documents = [], []
+     編號  地區  ...                      場合標籤  來源數
+0   C01  華語  ...          失戀、遺憾、思念、KTV 抒情歌    3
+1   C02  華語  ...         性別平等、同志遊行、做自己、反霸凌    3
+2   C03  華語  ...     KTV 大合唱、畢業、老朋友聚會、喝酒聊天    3
+3   C04  華語  ...        電影主題曲、遺憾的愛、婚禮影片、告白    4
+4   C05  華語  ...       影集片尾曲、思念、遠距離、跨越時空的愛    4
+5   C06  華語  ...              離別、遠距離、分手、懷舊    4
+6   C07  華語  ...          KTV、單戀、付出不被珍惜、深夜    3
+7   C08  華語  ...         KTV、紓壓、想逃離生活、朋友聚會    4
+8   C09  華語  ...         電影主題曲、失去摯愛、哭一場、追思    3
+9   C10  華語  ...  回憶殺、尾牙表演、告白、團體舞蹈、KTV 青春歌    3
+10  C11  華語  ...   電影主題曲、遠距離、宇宙浪漫、KTV 高音挑戰    3
+11  C12  華語  ...      演唱會大合唱、思念前任、KTV、深夜回憶    4
+12  J01  日本  ...         比賽前、熱血打氣、電影主題曲、運動    4
+13  J02  日本  ...          動畫主題曲、告別、思念、深夜獨處    3
+14  J03  日本  ...       動畫電影主題曲、旅行、療癒、告別與重生    3
+15  J04  日本  ...        動畫主題曲、跳舞、追星、KTV 挑戰    3
+16  J05  日本  ...        思念逝者、追思、日劇主題曲、深夜獨處    3
+17  J06  日本  ...      失戀、無法在一起的愛、KTV、電影主題曲    4
+18  J07  日本  ...  發洩壓力、反抗、KTV 吼歌、上班上課很煩的時候    3
+19  J08  日本  ...        夏天、戀愛、情侶出遊、婚禮影片、懷舊    3
+20  J09  日本  ...     動畫主題曲、熱血打氣、比賽、KTV 動漫歌    3
+21  J10  日本  ...        畢業、比賽結束、送給努力過的人、青春    4
+22  J11  日本  ...          跳舞挑戰、派對、動畫主題曲、提神    2
+23  J12  日本  ...         深夜、微醺、情歌、海外爆紅、短影音    4
+24  W01  歐美  ...            告白、情侶、夏天、派對、跳舞    3
+25  W02  歐美  ...       演唱會大合唱、遠距戀愛、跨國友情、畢業    3
+26  W03  歐美  ...    暗戀、深夜、想傳訊息又不敢、朋友以上戀人未滿    3
+27  W04  歐美  ...             告白、婚禮、情侶、長久的愛    4
+28  W05  歐美  ...         開車兜風、運動健身、派對、跳舞挑戰    3
+29  W06  歐美  ...            失戀、分手、一個人開車、青春    3
+30  W07  歐美  ...             求婚、婚禮、告白、浪漫約會    3
+31  W08  歐美  ...             失戀、失去親人、追思、療傷    4
+32  W09  歐美  ...          婚禮、紀念日、浪漫晚餐、情侶對唱    2
+33  W10  歐美  ...             婚禮、第一支舞、求婚、告白    3
+34  W11  歐美  ...            畢業、追思、懷念老朋友、送別    3
+35  W12  歐美  ...         分手後、愛自己、單身派對、自我激勵    3
+
+[36 rows x 7 columns]C:\Users\<user>\AppData\Local\Temp\claude\raghw\venv\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\<user>\.cache\huggingface\hub\models--google--embeddinggemma-2. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\<user>\AppData\Local\Temp\claude\raghw\venv\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\<user>\.cache\huggingface\hub. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+
+歌曲數： 36 ／片段數： 216
+各地區歌曲數： {'華語': 12, '日本': 12, '歐美': 12}
+
+第一個片段的統一格式：
+{
+  "doc_id": "C01-1",
+  "text": "〈修煉愛情〉林俊傑（JJ Lin）｜創作背景\n〈修煉愛情〉收錄在新加坡歌手林俊傑2013年3月發行的第十張專輯《因你而在》（Stories Untold），作詞人易家揚是林俊傑的長期合作夥伴。歌曲的英文名是 Practice Love，把愛情比喻成一場修煉：經歷過失去與遺憾，才慢慢學會怎麼愛、怎麼放下。根據媒體報導，這首歌背後藏著林俊傑一段「超越生死、回不去的遺憾」——報導提到他中學時期認識的一位女性友人在1997年的空難中離世，事後才得知她的遺物中有一張他的照片，這份遺憾成為創作的契機之一。",
+  "metadata": {
+    "song_id": "C01",
+    "title": "修煉愛情",
+    "artist": "林俊傑（JJ Lin）",
+    "region": "華語",
+    "year": 2013,
+    "year_note": "2013",
+    "language": "華語",
+    "genre": "抒情流行（鋼琴情歌）",
+    "tags": [
+      "失戀",
+      "遺憾",
+      "思念",
+      "KTV 抒情歌"
+    ],
+    "moods": [
+      "遺憾",
+      "成長",
+      "放下",
+      "回不去"
+    ],
+    "source_urls": [
+      "https://www.marieclaire.com.tw/entertainment/news/80070",
+      "https://www.wikipedia.org/wiki/Kevin_Yi",
+      "https://rubenerd.com/music-monday-jj-lin-practice-love"
+    ],
+    "date": "2026-10-23",
+    "document_type": "課堂作業自行整理摘要（非官方資料，不含歌詞）",
+    "filename": "C01_practice_love.txt",
+    "section": "創作背景"
+  }
+}
+----- cell 10 ok (0.1s)
+
+===== cell 11: REGION_LABELS = {"歐美": "Western", "日本": "Japan", "華語": "Mandarin"}
+[saved chart] C:\Users\<user>\AppData\Local\Temp\claude\C--Users-user-Downloads----AI---\4a1b6d50-39c5-4943-bd3f-da0e99b1672f\scratchpad\docgen\img\chart_1.png
+片段長度：最短 72 ／最長 394 ／平均 160
+----- cell 11 ok (0.4s)
+
+===== cell 12: try:
+
+Loading weights:   0%|          | 0/413 [00:00<?, ?it/s]
+Loading weights:  35%|███▍      | 144/413 [00:00<00:00, 1439.18it/s]
+Loading weights:  70%|██████▉   | 288/413 [00:00<00:00, 1303.96it/s]
+Loading weights: 100%|██████████| 413/413 [00:00<00:00, 1225.76it/s]
+<cell 12>:19: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+模型： google/embeddinggemma-2
+版本： f9972ac22e696a105c482202646979e33e4b5a1e
+裝置： cpu ／精度： torch.float32
+向量維度： 768
+----- cell 12 ok (337.6s)
+
+===== cell 13: def document_title(metadata):
+token 上限： 2048 ／最長片段： 272 tokens／平均： 126
+第一筆真正送入 embedding 的文字：
+ title: 修煉愛情 - 林俊傑（JJ Lin） | text: 〈修煉愛情〉林俊傑（JJ Lin）｜創作背景
+〈修煉愛情〉收錄在新加坡歌手林俊傑2013年3月發行的第十張專輯《因你而在》（Stories Untold），作詞人易家揚是林俊傑的長期合作夥伴。歌曲的英文名是 Practice Love，把愛情比喻成一場修煉：經歷過失去與遺憾，才慢慢學會怎麼愛、怎麼放下。根據媒體報導，這首歌背後藏著林俊傑一段「超越生死、回不去的遺憾」——報導提到他中學時期認識的一位女性友人在1997年的空難中離世，事後才得知她的遺物中有一張他的照片，這份遺憾成為創作的契機之一。
+----- cell 13 ok (0.0s)
+
+===== cell 14: embeddings = model.encode(
+
+Batches:   0%|          | 0/27 [00:00<?, ?it/s]
+Batches:   4%|▎         | 1/27 [00:03<01:38,  3.77s/it]
+Batches:   7%|▋         | 2/27 [00:07<01:28,  3.52s/it]
+Batches:  11%|█         | 3/27 [00:09<01:17,  3.21s/it]
+Batches:  15%|█▍        | 4/27 [00:12<01:08,  2.99s/it]
+Batches:  19%|█▊        | 5/27 [00:15<01:01,  2.79s/it]
+Batches:  22%|██▏       | 6/27 [00:17<00:57,  2.73s/it]
+Batches:  26%|██▌       | 7/27 [00:20<00:52,  2.65s/it]
+Batches:  30%|██▉       | 8/27 [00:22<00:48,  2.57s/it]
+Batches:  33%|███▎      | 9/27 [00:24<00:44,  2.45s/it]
+Batches:  37%|███▋      | 10/27 [00:26<00:40,  2.39s/it]
+Batches:  41%|████      | 11/27 [00:29<00:38,  2.39s/it]
+Batches:  44%|████▍     | 12/27 [00:31<00:33,  2.25s/it]
+Batches:  48%|████▊     | 13/27 [00:33<00:30,  2.15s/it]
+Batches:  52%|█████▏    | 14/27 [00:35<00:26,  2.06s/it]
+Batches:  56%|█████▌    | 15/27 [00:36<00:23,  1.94s/it]
+Batches:  59%|█████▉    | 16/27 [00:38<00:20,  1.89s/it]
+Batches:  63%|██████▎   | 17/27 [00:40<00:17,  1.79s/it]
+Batches:  67%|██████▋   | 18/27 [00:41<00:15,  1.77s/it]
+Batches:  70%|███████   | 19/27 [00:43<00:13,  1.74s/it]
+Batches:  74%|███████▍  | 20/27 [00:44<00:11,  1.68s/it]
+Batches:  78%|███████▊  | 21/27 [00:46<00:09,  1.60s/it]
+Batches:  81%|████████▏ | 22/27 [00:47<00:07,  1.52s/it]
+Batches:  85%|████████▌ | 23/27 [00:49<00:05,  1.47s/it]
+Batches:  89%|████████▉ | 24/27 [00:50<00:04,  1.41s/it]
+Batches:  93%|█████████▎| 25/27 [00:51<00:02,  1.36s/it]
+Batches:  96%|█████████▋| 26/27 [00:52<00:01,  1.33s/it]
+Batches: 100%|██████████| 27/27 [00:54<00:00,  1.27s/it]
+Batches: 100%|██████████| 27/27 [00:54<00:00,  2.00s/it]
+矩陣形狀（片段數, 向量維度）： (216, 768)
+----- cell 14 ok (54.0s)
+
+===== cell 15: SECTION_LABELS = {
+[saved chart] C:\Users\<user>\AppData\Local\Temp\claude\C--Users-user-Downloads----AI---\4a1b6d50-39c5-4943-bd3f-da0e99b1672f\scratchpad\docgen\img\chart_2.png
+----- cell 15 ok (0.4s)
+
+===== cell 16: index = faiss.IndexFlatIP(DIMENSION)
+索引類型： IndexFlatIP ／向量數： 216 ／維度： 768
+----- cell 16 ok (0.0s)
+
+===== cell 17: def embed_question(question):
+
+問題： 有什麼適合在婚禮上播放的歌？
+   排名     片段                  歌名       段落     相似度
+0   1  W10-3             Perfect  適合場合與用途  0.7956
+1   2  C04-3                如果可以  適合場合與用途  0.7878
+2   3  W04-3  BIRDS OF A FEATHER  適合場合與用途  0.7729
+
+問題： 哪首歌是寫給因為疫情不能比賽的高中生？
+   排名     片段   歌名       段落     相似度
+0   1  J10-1  水平線     創作背景  0.7605
+1   2  J10-4  水平線     歌手趣聞  0.7223
+2   3  J10-3  水平線  適合場合與用途  0.7157
+
+問題： 哪些歌是動畫的主題曲？
+   排名     片段               歌名    段落     相似度
+0   1  J09-4              紅蓮華  歌手趣聞  0.7313
+1   2  J03-1  すずめ feat.十明（鈴芽）  創作背景  0.7305
+2   3  J09-1              紅蓮華  創作背景  0.7299
+
+問題： BTS 的 Dynamite 在講什麼？
+   排名     片段           歌名       段落     相似度
+0   1  W02-3  My Universe  適合場合與用途  0.7106
+1   2  W02-2  My Universe    氛圍與情緒  0.7075
+2   3  W02-1  My Universe     創作背景  0.7033
+----- cell 17 ok (0.4s)
+
+===== cell 18: EXPORT_DIR = Path(tempfile.mkdtemp(prefix="rag_index_"))
+config.json (1,702 bytes)
+documents.json (307,600 bytes)
+index.faiss (663,597 bytes)
+index_doc_ids.json (2,595 bytes)
+----- cell 18 ok (0.1s)
+
+===== cell 19: loaded_config = json.loads((EXPORT_DIR / "config.json").read_text(enco
+通過：檔案完整性、片段對照、索引維度與保存前後一致。
+----- cell 19 ok (0.1s)
+
+===== cell 20: EXPORT_ZIP = EXPORT_DIR.parent / f"{EXPORT_DIR.name}_download" / EXPOR
+下載檔名： rag-data.zip ／大小： 668,055 bytes
+[fake download] C:\Users\<user>\AppData\Local\Temp\rag_index_j_9gmrii_download\rag-data.zip
+----- cell 20 ok (0.1s)
+
+===== cell 21: SAVE_TO_DRIVE = False
+略過；需要時把 SAVE_TO_DRIVE 改成 True。
+----- cell 21 ok (0.0s)
+
+ALL CELLS OK

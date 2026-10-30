@@ -1,0 +1,326 @@
+[
+ {
+  "id": "W01",
+  "region": "歐美",
+  "title": "Señorita",
+  "artist": "Shawn Mendes & Camila Cabello",
+  "year": "2019",
+  "tags": "告白、情侶、夏天、派對、跳舞",
+  "sources": 3
+ },
+ {
+  "id": "W02",
+  "region": "歐美",
+  "title": "My Universe",
+  "artist": "Coldplay × BTS",
+  "year": "2021",
+  "tags": "演唱會大合唱、遠距戀愛、跨國友情、畢業",
+  "sources": 3
+ },
+ {
+  "id": "W03",
+  "region": "歐美",
+  "title": "drunk text",
+  "artist": "Henry Moodie",
+  "year": "2023",
+  "tags": "暗戀、深夜、想傳訊息又不敢、朋友以上戀人未滿",
+  "sources": 3
+ },
+ {
+  "id": "W04",
+  "region": "歐美",
+  "title": "BIRDS OF A FEATHER",
+  "artist": "Billie Eilish",
+  "year": "2024",
+  "tags": "告白、婚禮、情侶、長久的愛",
+  "sources": 4
+ },
+ {
+  "id": "W05",
+  "region": "歐美",
+  "title": "Blinding Lights",
+  "artist": "The Weeknd",
+  "year": "2019",
+  "tags": "開車兜風、運動健身、派對、跳舞挑戰",
+  "sources": 3
+ },
+ {
+  "id": "W06",
+  "region": "歐美",
+  "title": "drivers license",
+  "artist": "Olivia Rodrigo",
+  "year": "2021",
+  "tags": "失戀、分手、一個人開車、青春",
+  "sources": 3
+ },
+ {
+  "id": "W07",
+  "region": "歐美",
+  "title": "Love Story (Taylor's Version)",
+  "artist": "Taylor Swift",
+  "year": "2021（原版2008）",
+  "tags": "求婚、婚禮、告白、浪漫約會",
+  "sources": 3
+ },
+ {
+  "id": "W08",
+  "region": "歐美",
+  "title": "Someone You Loved",
+  "artist": "Lewis Capaldi",
+  "year": "2018",
+  "tags": "失戀、失去親人、追思、療傷",
+  "sources": 4
+ },
+ {
+  "id": "W09",
+  "region": "歐美",
+  "title": "Die With A Smile",
+  "artist": "Lady Gaga & Bruno Mars",
+  "year": "2024",
+  "tags": "婚禮、紀念日、浪漫晚餐、情侶對唱",
+  "sources": 2
+ },
+ {
+  "id": "W10",
+  "region": "歐美",
+  "title": "Perfect",
+  "artist": "Ed Sheeran",
+  "year": "2017",
+  "tags": "婚禮、第一支舞、求婚、告白",
+  "sources": 3
+ },
+ {
+  "id": "W11",
+  "region": "歐美",
+  "title": "Memories",
+  "artist": "Maroon 5（魔力紅）",
+  "year": "2019",
+  "tags": "畢業、追思、懷念老朋友、送別",
+  "sources": 3
+ },
+ {
+  "id": "W12",
+  "region": "歐美",
+  "title": "Flowers",
+  "artist": "Miley Cyrus（麥莉・希拉）",
+  "year": "2023",
+  "tags": "分手後、愛自己、單身派對、自我激勵",
+  "sources": 3
+ },
+ {
+  "id": "J01",
+  "region": "日本",
+  "title": "Renegades",
+  "artist": "ONE OK ROCK",
+  "year": "2021",
+  "tags": "比賽前、熱血打氣、電影主題曲、運動",
+  "sources": 4
+ },
+ {
+  "id": "J02",
+  "region": "日本",
+  "title": "One Last Kiss",
+  "artist": "宇多田光（宇多田ヒカル）",
+  "year": "2021",
+  "tags": "動畫主題曲、告別、思念、深夜獨處",
+  "sources": 3
+ },
+ {
+  "id": "J03",
+  "region": "日本",
+  "title": "すずめ feat.十明（鈴芽）",
+  "artist": "RADWIMPS feat. 十明",
+  "year": "2022",
+  "tags": "動畫電影主題曲、旅行、療癒、告別與重生",
+  "sources": 3
+ },
+ {
+  "id": "J04",
+  "region": "日本",
+  "title": "アイドル（偶像）",
+  "artist": "YOASOBI",
+  "year": "2023",
+  "tags": "動畫主題曲、跳舞、追星、KTV 挑戰",
+  "sources": 3
+ },
+ {
+  "id": "J05",
+  "region": "日本",
+  "title": "Lemon",
+  "artist": "米津玄師",
+  "year": "2018",
+  "tags": "思念逝者、追思、日劇主題曲、深夜獨處",
+  "sources": 3
+ },
+ {
+  "id": "J06",
+  "region": "日本",
+  "title": "Pretender",
+  "artist": "Official髭男dism（官方鬍子男 dism，簡稱 HIGE DAN）",
+  "year": "2019",
+  "tags": "失戀、無法在一起的愛、KTV、電影主題曲",
+  "sources": 4
+ },
+ {
+  "id": "J07",
+  "region": "日本",
+  "title": "うっせぇわ（吵死了）",
+  "artist": "Ado",
+  "year": "2020",
+  "tags": "發洩壓力、反抗、KTV 吼歌、上班上課很煩的時候",
+  "sources": 3
+ },
+ {
+  "id": "J08",
+  "region": "日本",
+  "title": "マリーゴールド（金盞花）",
+  "artist": "あいみょん（愛繆）",
+  "year": "2018",
+  "tags": "夏天、戀愛、情侶出遊、婚禮影片、懷舊",
+  "sources": 3
+ },
+ {
+  "id": "J09",
+  "region": "日本",
+  "title": "紅蓮華",
+  "artist": "LiSA",
+  "year": "2019",
+  "tags": "動畫主題曲、熱血打氣、比賽、KTV 動漫歌",
+  "sources": 3
+ },
+ {
+  "id": "J10",
+  "region": "日本",
+  "title": "水平線",
+  "artist": "back number",
+  "year": "2020",
+  "tags": "畢業、比賽結束、送給努力過的人、青春",
+  "sources": 4
+ },
+ {
+  "id": "J11",
+  "region": "日本",
+  "title": "Bling-Bang-Bang-Born",
+  "artist": "Creepy Nuts",
+  "year": "2024",
+  "tags": "跳舞挑戰、派對、動畫主題曲、提神",
+  "sources": 2
+ },
+ {
+  "id": "J12",
+  "region": "日本",
+  "title": "死ぬのがいいわ（Shinunoga E-Wa）",
+  "artist": "藤井風",
+  "year": "2020（2022年在海外爆紅）",
+  "tags": "深夜、微醺、情歌、海外爆紅、短影音",
+  "sources": 4
+ },
+ {
+  "id": "C01",
+  "region": "華語",
+  "title": "修煉愛情",
+  "artist": "林俊傑（JJ Lin）",
+  "year": "2013",
+  "tags": "失戀、遺憾、思念、KTV 抒情歌",
+  "sources": 3
+ },
+ {
+  "id": "C02",
+  "region": "華語",
+  "title": "玫瑰少年",
+  "artist": "蔡依林",
+  "year": "2018",
+  "tags": "性別平等、同志遊行、做自己、反霸凌",
+  "sources": 3
+ },
+ {
+  "id": "C03",
+  "region": "華語",
+  "title": "浪子回頭",
+  "artist": "茄子蛋（EggPlantEgg）",
+  "year": "2017",
+  "tags": "KTV 大合唱、畢業、老朋友聚會、喝酒聊天",
+  "sources": 3
+ },
+ {
+  "id": "C04",
+  "region": "華語",
+  "title": "如果可以",
+  "artist": "韋禮安",
+  "year": "2021",
+  "tags": "電影主題曲、遺憾的愛、婚禮影片、告白",
+  "sources": 4
+ },
+ {
+  "id": "C05",
+  "region": "華語",
+  "title": "想見你想見你想見你",
+  "artist": "八三夭（主唱阿璞創作）",
+  "year": "2019",
+  "tags": "影集片尾曲、思念、遠距離、跨越時空的愛",
+  "sources": 4
+ },
+ {
+  "id": "C06",
+  "region": "華語",
+  "title": "說好不哭",
+  "artist": "周杰倫 with 五月天阿信",
+  "year": "2019",
+  "tags": "離別、遠距離、分手、懷舊",
+  "sources": 4
+ },
+ {
+  "id": "C07",
+  "region": "華語",
+  "title": "K歌之王",
+  "artist": "陳奕迅（Eason Chan）",
+  "year": "2000（另有粵語版）",
+  "tags": "KTV、單戀、付出不被珍惜、深夜",
+  "sources": 3
+ },
+ {
+  "id": "C08",
+  "region": "華語",
+  "title": "李白",
+  "artist": "李榮浩",
+  "year": "2013",
+  "tags": "KTV、紓壓、想逃離生活、朋友聚會",
+  "sources": 4
+ },
+ {
+  "id": "C09",
+  "region": "華語",
+  "title": "有一種悲傷",
+  "artist": "A-Lin（黃麗玲）",
+  "year": "2018",
+  "tags": "電影主題曲、失去摯愛、哭一場、追思",
+  "sources": 3
+ },
+ {
+  "id": "C10",
+  "region": "華語",
+  "title": "愛你",
+  "artist": "王心凌（Cyndi Wang）",
+  "year": "2004（2022年再度爆紅）",
+  "tags": "回憶殺、尾牙表演、告白、團體舞蹈、KTV 青春歌",
+  "sources": 3
+ },
+ {
+  "id": "C11",
+  "region": "華語",
+  "title": "光年之外",
+  "artist": "鄧紫棋（G.E.M.）",
+  "year": "2016",
+  "tags": "電影主題曲、遠距離、宇宙浪漫、KTV 高音挑戰",
+  "sources": 3
+ },
+ {
+  "id": "C12",
+  "region": "華語",
+  "title": "突然好想你",
+  "artist": "五月天（Mayday）",
+  "year": "2008",
+  "tags": "演唱會大合唱、思念前任、KTV、深夜回憶",
+  "sources": 4
+ }
+]
